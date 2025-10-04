@@ -1,5 +1,3 @@
-# Thinking About Time To X Metrics
-
 A walkthrough of recording actionable time metrics for an incident response team.
 
 <!--more-->
@@ -188,3 +186,4 @@ If you liked this blog and want more in-depth opinions on IR metrics please let 
 If you're a fan of The Overnights please consider supporting:  
 [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https:///paypal.me/amalone341)  
 [!["Buy Me A Coffee"](https://user-images.githubusercontent.com/1376749/120938564-50c59780-c6e1-11eb-814f-22a0399623c5.png)](https://buymeacoffee.com/amalone341)
+
