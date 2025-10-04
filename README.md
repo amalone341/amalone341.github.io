@@ -1,6 +1,6 @@
 # The Overnights
 Blog made possible with
-[Forever Jekyll - A simple, elegant & full featured Jekyll theme](https://forever-jekyll.github.io)
+[Forever Jekyll - A simple, elegant & full featured Jekyll theme](https://github.com/forever-jekyll/forever-jekyll)
 
 ## Support
 
