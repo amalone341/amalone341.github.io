@@ -12,7 +12,7 @@ Today, we’ve gotten these metrics to the point where all stresses and performa
 
 ## So How’d I Start?
 
-The same place everyone does, looking it up. After a bit of digging I was disappointed in the industry wide definition of IR metrics.. Fun experiment, google “time to detect incident response”. Here’s the first 3 definitions I got from the search engine gods. 
+The same place everyone does, looking it up. After a bit of digging I was disappointed in the industry wide definition of IR metrics. Fun experiment, google “time to detect incident response”. Here’s the first 3 definitions I got from the search engine gods. 
 
 1. MTTD is defined as the average amount of time your team needs to detect a security incident.
 2. The mean amount of time it takes for the organization to discover—or detect—an incident.
@@ -36,33 +36,42 @@ First we need to understand what we are trying to measure. Assume that all incid
 
 In order to get a consistent start and end we need explicit definitions for A-H above. 
 
-   A. **Initial Compromise:** The first step in the killchain. 
-      1. Ex: Malware Downloaded to a System, Phishing email coming in, USB drive plugged in
-      2. Note that you may not know what this time is until a case is fully closed. Actors can lay dormant for months before making a move. 
+###### **A. Initial Compromise:** The first step in the killchain.
 
-   B. **Unseen Activity:** All activity from the threat actor that is not responded to by the security team.
-      1. This includes logs and alerts which are noticed by a tool but never picked up by the team. 
+- Ex: Malware Downloaded to a System, Phishing email coming in, USB drive plugged in
+- Note that you may not know what this time is until a case is fully closed. Actors can lay dormant for months before making a move. 
 
-   C. **Reaction Event:**  Initial log or alert that will trigger a response process
-      1. Ex: Network log that goes to a SIEM and results in a detection
-      2. Ex: The timestamp an EDR blocked a piece of malware which makes a case that gets reviewed by an analyst
-      3. **If there is no response to a detection, alert, log, or other means the Reaction Event has not occurred.**
-         i. Logs which are discovered during an investigation which pre-date the Reaction Event do not count. Those should fall in Unseen Activity.
+###### **B. Unseen Activity:** All activity from the threat actor that is not responded to by the security team.
 
-   D. **Alert Hits Queue:** The time the alert/detection/etc arrives on the platform a human will respond to.
-      1. A tool like a NTA or ASM is configured to send alerts via Email to the IR team. Timestamp D is the time when the team receives the email.
-      2. SIEM fires a detection that gets sent to a SOAR which then creates an alert that an analyst analyzes.  Timestamp D is the creation time of the alert in the SOAR.
+- This includes logs and alerts which are noticed by a tool but never picked up by the team. 
 
-   E. **Human Acknowledgment of Alert:** The time an analyst first picks up the alert/detection they will respond to
-      1. Button for acknowledgement in a case management platform
+###### **C. Reaction Event:**  Initial log or alert that will trigger a response process
 
-   F. **Investigation:** Time spent triaging, information gathering, etc
+- Ex: Network log that goes to a SIEM and results in a detection
 
-   G. **Mitigation:** Time when the threat is fully mitigated by manual response actions.
-      1. Team members quarantine an account.
-      2. Team members manually isolate a host.
+- Ex: The timestamp an EDR blocked a piece of malware which makes a case that gets reviewed by an analyst
 
-   H. **Closure:** Time which an incident is marked as closed and tied up all nice with a big red bow on it.
+- **If there is no response to a detection, alert, log, or other means the Reaction Event has not occurred.**
+
+- Logs which are discovered during an investigation which pre-date the Reaction Event do not count. Those should fall in Unseen Activity.
+
+###### **D. Alert Hits Queue:** The time the alert/detection/etc arrives on the platform a human will respond to.
+
+- A tool like a NTA or ASM is configured to send alerts via Email to the IR team. Timestamp D is the time when the team receives the email.
+- SIEM fires a detection that gets sent to a SOAR which then creates an alert that an analyst analyzes.  Timestamp D is the creation time of the alert in the SOAR.
+
+###### **E. Human Acknowledgment of Alert:** The time an analyst first picks up the alert/detection they will respond to
+
+- Button for acknowledgement in a case management platform
+
+###### **F. Investigation:** Time spent triaging, information gathering, etc
+
+###### **G. Mitigation:** Time when the threat is fully mitigated by manual response actions.
+
+- Team members quarantine an account.
+- Team members manually isolate a host.
+
+###### **H. Closure:** Time which an incident is marked as closed and tied up all nice with a big red bow on it.
 
 Is this a gross generalization? Yes. If you’ve worked more than 5 incidents in your life you know that sometimes points overlap. For example, end users downloading malware (Which remains one of America’s favorite past times). A half decent EDR tool should pick up on recent strains and block it the second it hits the system. In this case A and C are the same and B is 0. 
 
@@ -149,13 +158,13 @@ Someone downloads a known malicious file like a RAT which immediately gets block
 
 In these types of cases the TTD is always 0. There is no downtime between the start of the incident and the time when a security tool reports the behavior to an analyst. 
 
-###### TTD Case 2
+##### TTD Case 2
 
 An account is taken over on January 3rd. The actor lays dormant for two weeks and then downloads a piece of malware which gets spotted by the endpoint agent. The agent then creates and sends a case to an analyst. *This encompasses all security incidents which are detected by a tool later in their attack chain post initial compromise. This implies other activity that could have been detected but was not.*
 
 Here the time to detect relies on the actor performing an activity that is bad enough for a security tool to detect it. In the example the time to detect is two weeks. These cases will contain a lot of variation and can range anywhere from minutes to months.
 
-###### TTD Case 3
+##### TTD Case 3
 
 A machine is infected with a piece of malware that the EPP does not find. In a threat hunt performed by the security team, logs in the SIEM are found that could indicate a compromise. These logs are then sent to a CIRT team who declares an incident. *All security incidents where a person is the reason the investigation starts.*
 
@@ -182,8 +191,3 @@ These deltas are the specific gaps which have given me actionable and consistent
 The key is to be consistent for your own team! Spend the hours getting waaay into the weeds about definitions and metrics. Arguing about where those lines should be and what to record will force clarity in the definitions and result in a framework that works for you! If you do decide to use my chain and lines please make sure you understand where the timestamps are for each one of the steps.
 
 If you liked this blog and want more in-depth opinions on IR metrics please let me know! I’ve got a whole blog bouncing in my head on just TTD alone and we didn’t touch on non-time metrics here. Thanks for hanging with me and I hope this helps a bit for all my blue hats out there!
-
-If you're a fan of The Overnights please consider supporting:  
-[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https:///paypal.me/amalone341)  
-[!["Buy Me A Coffee"](https://user-images.githubusercontent.com/1376749/120938564-50c59780-c6e1-11eb-814f-22a0399623c5.png)](https://buymeacoffee.com/amalone341)
-
