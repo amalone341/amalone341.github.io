@@ -639,7 +639,7 @@ header .title {
 }
 header {
   background-color: $header-bg-color;
-  background-color: rgba(33, 37, 41, 0.7); // Semi-Transparent Overlay
+  background-color: rgba(33, 37, 41, 0.3); // Semi-Transparent Overlay
 }
 header .nav-wrapper .menu a,
 header .nav-wrapper .menu ul li a:hover {
