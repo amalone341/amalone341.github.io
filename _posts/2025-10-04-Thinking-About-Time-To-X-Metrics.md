@@ -4,9 +4,9 @@ A walkthrough of recording actionable time metrics for an incident response team
 
 ## A bit about me and what made me write this
 
-I’ve been working for one of the major US airlines for a few years now and I've had the amazing experience of seeing much of what is under the blue team net. From detection engineering to policy writing I've got to dip my toes in many of the cyber subcategories. 
+I’ve been working for one of the major US airlines for a few years now and I've had the amazing experience of seeing much of what is under the blue team net. From detection engineering to policy writing I've gotten to dip my toes in many of the cyber subcategories. 
 
-About two years ago now we decided to in-house our IR program and I led the building and defining of the whole responding to incidents thing. All the while I worked as a responder feeling the impact of what I was building.  After months of writing and writing until we were so sick of writing that we wrote for another month, my head turned to metrics. I blame my boss for (thankfully) drilling the saying “you can’t manage what you can’t measure” into me.  
+About two years ago now we decided to in-house our IR program and I led the proccess of building and defining the whole responding-to-incidents thing. All the while I worked as a responder feeling the impact of what I was building.  After months of writing and writing until we were so sick of writing that we wrote for another month, my head turned to metrics. I blame my boss for (thankfully) drilling the saying “you can’t manage what you can’t measure” into me.  
 
 Today, we’ve gotten these metrics to the point where all stresses and performances of the IR team reflect themselves automatically. I can’t stress enough how important this is for coordination with leadership. Saying “please help and get me more resources” will always be met with a “why”. We want to change that to “Here’s a big spikey part of a graph that shows how strained my team is, either fix it or we can’t respond well.” (No, that is not how I talk to my boss). We want actionable data that give business leaders a choice based on risk and resources.
 
@@ -191,3 +191,4 @@ These deltas are the specific gaps which have given me actionable and consistent
 The key is to be consistent for your own team! Spend the hours getting waaay into the weeds about definitions and metrics. Arguing about where those lines should be and what to record will force clarity in the definitions and result in a framework that works for you! If you do decide to use my chain and lines please make sure you understand where the timestamps are for each one of the steps.
 
 If you liked this blog and want more in-depth opinions on IR metrics please let me know! I’ve got a whole blog bouncing in my head on just TTD alone and we didn’t touch on non-time metrics here. Thanks for hanging with me and I hope this helps a bit for all my blue hats out there!
+
