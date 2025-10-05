@@ -639,9 +639,17 @@ header .title {
 }
 header {
   background-color: $header-bg-color;
-  background-color: rgba(33, 37, 41, 0.3); // Semi-Transparent Overlay
 }
 header .nav-wrapper .menu a,
 header .nav-wrapper .menu ul li a:hover {
   color: $text-gray;
+}
+
+.site-header {
+  width: 100%;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem; /* Adjust padding values as needed */
 }
