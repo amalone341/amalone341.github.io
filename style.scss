@@ -628,3 +628,19 @@ footer {
 @import "search";
 @import "video";
 @import "mermaid";
+
+// ADDTITIONS
+header {
+  background-color: $header-bg-color;
+  background-color: rgba(33, 37, 41, 0.7); // Semi-Transparent Overlay
+}
+
+// Update text color for header elements to dark gray
+$text-gray: #212529; // Dark Gray Text Color
+header .title {
+  color: $text-gray;
+}
+header .nav-wrapper .menu a,
+header .nav-wrapper .menu ul li a:hover {
+  color: $text-gray;
+}
