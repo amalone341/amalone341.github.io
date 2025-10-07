@@ -20,13 +20,13 @@ avatar: https://avatars.githubusercontent.com/u/42788620?v=4
 
 # Your website URL (e.g. https://forever-jekyll.github.io or https://forever-jekyll.com)
 # Used for Sitemap.xml and your RSS feed
-url: https://theovernights.com/
+url: "https://amalone341.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "https://theovernights.com/"
+baseurl: ""
 
 # Navigation menu
 navigation_links:

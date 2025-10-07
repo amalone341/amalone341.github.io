@@ -646,6 +646,9 @@ header .nav-wrapper .menu ul li a:hover {
 }
 
 #site-header {
+  background-image: url('/assets/image/headBG.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1a1001;
 }
