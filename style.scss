@@ -632,41 +632,42 @@ footer {
 // ADDTITIONS
 
 
+/* -----------------------------------
+   Header Styling Compatible with Darkmode.js
+   Using a .header-content wrapper
+------------------------------------ */
 
-
+/* Base header */
 #site-header {
+  position: relative;
   background-image: url('/assets/image/headBG.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #1a1001;
-  position: relative;
+  background-color: #1a1001; /* fallback background */
+  color: #ffffff;
+  text-align: center;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  overflow: hidden;
 }
 
-#site-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Ensure the site-info content appears above the overlay */
-#site-header .site-info {
+/* Wrapper for header content to isolate inversion */
+#site-header .header-content {
   position: relative;
   z-index: 1;
-  padding: 20px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: filter 0.3s ease;
 }
 
-/* Site title styling */
-#site-header .site-info h1.site-name a {
+/* Title */
+#site-header .header-content .site-info h1.site-name a {
   color: #ffffff;
   font-family: 'Roboto', 'Helvetica', sans-serif;
   font-size: 3rem;
@@ -675,35 +676,49 @@ footer {
   letter-spacing: 2px;
   text-decoration: none;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-#site-header .site-info h1.site-name a:hover {
+#site-header .header-content .site-info h1.site-name a:hover {
   color: #a0eaff; /* subtle hover effect */
 }
 
-/* Site description/tagline styling */
-#site-header .site-info p.site-description {
+/* Description */
+#site-header .header-content .site-info p.site-description {
   color: #e0e0e0;
-  font-size: 3rem;
-  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
   font-weight: 600;
   line-height: 1.4;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+/* Darkmode.js compatibility */
+/* Darkmode.js adds the .darkmode class to <body> */
+.darkmode #site-header .header-content {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Optional: override text colors to keep them readable after inversion */
+.darkmode #site-header .header-content .site-info h1.site-name a,
+.darkmode #site-header .header-content .site-info p.site-description {
+  color: inherit; /* inherit from the inverted filter */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #site-header {
-    min-height: 200px;
-    padding: 10px;
+    min-height: 140px;
+    padding: 1rem;
   }
 
-  #site-header .site-info h1.site-name a {
+  #site-header .header-content .site-info h1.site-name a {
     font-size: 2rem;
   }
 
-  #site-header .site-info p.site-description {
+  #site-header .header-content .site-info p.site-description {
     font-size: 1rem;
   }
 }
