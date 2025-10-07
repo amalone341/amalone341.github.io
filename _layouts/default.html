@@ -39,21 +39,23 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <header class="masthead clearfix">
-        <div class="container">
+    <header id="site-header" style="background-image: url('https://raw.githubusercontent.com/amalone341/amalone341.github.io/refs/heads/editor/assets/image/headBG.png'); height: {{ site.header_height }}{{ site.units }}">
+      <div class="wrapper-masthead">
+        <header class="masthead clearfix">
+          <div class="container">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <div class="site-info">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+              <p class="site-description">{{ site.description }}</p>
+            </div>
+
+            <nav class="nav-menu">
+              {% include navigation.html %}
+            </nav>
           </div>
-
-          <nav class="nav-menu">
-            {% include navigation.html %}
-          </nav>
-        </div>
-      </header>
-    </div>
+        </header>
+      </div>
+    </header>
 
     <div id="main" role="main" class="container">
       {{ content }}
