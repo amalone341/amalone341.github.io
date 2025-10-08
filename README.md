@@ -1,5 +1,5 @@
 # The Overnights
-Blog made possible with
+Big thanks for the Jekyll template to:
 [Forever Jekyll - A simple, elegant & full featured Jekyll theme](https://github.com/forever-jekyll/forever-jekyll)
 
 ## Support
