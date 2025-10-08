@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: $white;
+  background: $cyan;
   font-family: $sans-font-family;
   font-weight: 400;
   font-size: 18px;
@@ -575,19 +575,19 @@ a.nav-menu-item:focus {
   .read-more {
     text-transform: uppercase;
     font-size: 14px !important;
-    color: $mahogany;
+    color: $magenta;
 
     a {
-      color: $mahogany;
+      color: $magenta;
       text-decoration: none;
     }
 
       &:visited {
-        color: $mahogany;
+        color: $magenta;
       }
 
         &:hover {
-          color: $mahogany;
+          color: $magenta;
           text-decoration: underline;
         }
   }
@@ -595,7 +595,7 @@ a.nav-menu-item:focus {
   .reading-time {
     text-transform: uppercase;
     font-size: 14px !important;
-    color: $mahogany;
+    color: $magenta;
   }
 }
 
@@ -603,7 +603,7 @@ a.nav-menu-item:focus {
   margin-top: 30px;
   border-top: 01px solid #ddd;
   border-bottom: 01px solid #ddd;
-  background-color: $lightGray;
+  background-color: $lightyellow;
 }
 
 footer {
