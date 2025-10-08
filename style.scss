@@ -459,22 +459,34 @@ a[href^="#fnref:"] {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $deep-navy;
   font-family: $sans-font-family;
-  font-weight: 400;
-  font-size: 28px !important;
-  letter-spacing: 01px;
+  font-weight: 600;
+  font-size: 2.5rem !important;
+  letter-spacing: 1.5px;
+  text-shadow:
+    (0 1px 3px rgba(0,0,0,0.15)),
+    0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
 
   a {
+    color: inherit;
+    text-decoration: none;
+
     &:hover {
       color: $mahogany !important;
-      text-decoration: none;
+      text-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.6),
+        0 6px 12px rgba(0, 0, 0, 0.3);
+      transform: scale(1.03);
     }
+
     &:visited {
       color: inherit;
     }
   }
 }
+
 
 .site-description {
   margin: -05px 0 0 0;
@@ -632,93 +644,7 @@ footer {
 // ADDTITIONS
 
 
-/* -----------------------------------
-   Header Styling Compatible with Darkmode.js
-   Using a .header-content wrapper
------------------------------------- */
 
-/* Base header */
-#site-header {
-  position: relative;
-  background-image: url('/assets/image/headBG.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #1a1001; /* fallback background */
-  color: #ffffff;
-  text-align: center;
-  min-height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1rem;
-  overflow: hidden;
-}
 
-/* Wrapper for header content to isolate inversion */
-#site-header .header-content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: filter 0.3s ease;
-}
 
-/* Title */
-#site-header .header-content .site-info h1.site-name a {
-  color: #ffffff;
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
 
-#site-header .header-content .site-info h1.site-name a:hover {
-  color: #a0eaff; /* subtle hover effect */
-}
-
-/* Description */
-#site-header .header-content .site-info p.site-description {
-  color: #e0e0e0;
-  font-size: 1.2rem;
-  margin-top: 0.3rem;
-  font-weight: 600;
-  line-height: 1.4;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  transition: color 0.3s ease;
-}
-
-/* Darkmode.js compatibility */
-/* Darkmode.js adds the .darkmode class to <body> */
-.darkmode #site-header .header-content {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-/* Optional: override text colors to keep them readable after inversion */
-.darkmode #site-header .header-content .site-info h1.site-name a,
-.darkmode #site-header .header-content .site-info p.site-description {
-  color: inherit; /* inherit from the inverted filter */
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  #site-header {
-    min-height: 140px;
-    padding: 1rem;
-  }
-
-  #site-header .header-content .site-info h1.site-name a {
-    font-size: 2rem;
-  }
-
-  #site-header .header-content .site-info p.site-description {
-    font-size: 1rem;
-  }
-}
