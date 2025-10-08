@@ -19,7 +19,7 @@ The same place everyone does, looking it up. After a bit of digging I was disapp
 3. MTTD (Mean Time to Detect) measures the average amount of time it takes to identify an issue.
 
 So the time to detect is the time it takes for us to detect an incident. I truly did not see this coming...
-<img title="nooo" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/nooo.jpeg?raw=true" alt="" align="left" width="863" height="90" data-align="right">
+<img title="nooo" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/nooo.jpg?raw=true" alt="" align="left" width="863" height="90" data-align="right">
 
 While it's not wrong it's not specific enough. Many of the articles and definitions all give the vibe of “mhmm yes you want to detect better and respond quicker”. Very few actually define where the goalposts are for the start and the end.
 
@@ -192,4 +192,5 @@ These deltas are the specific gaps which have given me actionable and consistent
 The key is to be consistent for your own team! Spend the hours getting waaay into the weeds about definitions and metrics. Arguing about where those lines should be and what to record will force clarity in the definitions and result in a framework that works for you! If you do decide to use my chain and lines please make sure you understand where the timestamps are for each one of the steps.
 
 If you liked this blog and want more in-depth opinions on IR metrics please let me know! I’ve got a whole blog bouncing in my head on just TTD alone and we didn’t touch on non-time metrics here. Thanks for hanging with me and I hope this helps a bit for all my blue hats out there!
+
 
