@@ -18,7 +18,8 @@ The same place everyone does, looking it up. After a bit of digging I was disapp
 2. The mean amount of time it takes for the organization to discover—or detect—an incident.
 3. MTTD (Mean Time to Detect) measures the average amount of time it takes to identify an issue.
 
-So the time to detect is the time it takes for us to detect an incident. I truly did not see this coming O.O
+So the time to detect is the time it takes for us to detect an incident. I truly did not see this coming...
+<img title="nooo" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/nooo.jpeg?raw=true" alt="" align="left" width="863" height="90" data-align="right">
 
 While it's not wrong it's not specific enough. Many of the articles and definitions all give the vibe of “mhmm yes you want to detect better and respond quicker”. Very few actually define where the goalposts are for the start and the end.
 
