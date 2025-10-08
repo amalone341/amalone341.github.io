@@ -4,7 +4,7 @@ A walkthrough of recording actionable time metrics for an incident response team
 
 ## A bit about me and what made me write this
 
-I’ve been working for one of the major US airlines for a few years now and I've had the amazing experience of seeing much of what is under the blue team net. From detection engineering to policy writing I've got to dip my toes in many of the cyber subcategories. 
+I’ve been working for one of the major US airlines for a few years now and I've had the amazing experience of seeing a lot under the blue team umbrella. From detection engineering to policy writing I've got to dip my toes in many of the cyber subcategories. 
 
 About two years ago now we decided to in-house our IR program and I led the building and defining of the whole responding to incidents thing. All the while I worked as a responder feeling the impact of what I was building.  After months of writing and writing until we were so sick of writing that we wrote for another month, my head turned to metrics. I blame my boss for (thankfully) drilling the saying “you can’t manage what you can’t measure” into me.  
 
@@ -18,7 +18,8 @@ The same place everyone does, looking it up. After a bit of digging I was disapp
 2. The mean amount of time it takes for the organization to discover—or detect—an incident.
 3. MTTD (Mean Time to Detect) measures the average amount of time it takes to identify an issue.
 
-So the time to detect is the time it takes for us to detect an incident. I truly did not see this coming O.O
+So the time to detect is the time it takes for us to detect an incident. I truly did not see this coming...
+<img title="nooo" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/nooo.jpeg?raw=true" alt="" align="left" width="863" height="90" data-align="right">
 
 While it's not wrong it's not specific enough. Many of the articles and definitions all give the vibe of “mhmm yes you want to detect better and respond quicker”. Very few actually define where the goalposts are for the start and the end.
 
