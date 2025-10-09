@@ -106,3 +106,6 @@ exclude:
 # Robots are welcome
 include:
   - robots.txt
+
+# google analytics
+google_analytics: G-JR1Y0WCM81
