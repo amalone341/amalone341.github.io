@@ -35,7 +35,7 @@ First we need to understand what we are trying to measure. Assume that all incid
 
 <img title="Blank_Chain" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/Blank_Chain.png?raw=true" alt="" align="left" width="863" height="90" data-align="right">
 
-These letters will give us the starting and end point for the time metrics later on. Each outside of B and G should be single points in time. 
+These letters will give us the starting and end points for the time metrics later on. Each outside of B and G should be single points in time. 
 
 ###### **A. Initial Compromise:** Time of the first step in the killchain.
 
@@ -146,7 +146,7 @@ The rest of the cases should have no auto-mitigation, which means the IR team wi
 <img title="TTM_Chain" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/TTM_Chain.png?raw=true" alt="" align="left" width="863" height="130" data-align="right">
 
 Like TTA this should be a strictly human measurement. We want a gauge on how enabled our team is to mitigate threats when they’re pressing the button. This should go down over time as the team sures up their procedures and are empowered to take more decisive actions.
-<img title="bonk" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/bonk.png?raw=true" alt="" align="left" width="863" height="130" data-align="right">
+<img title="TTM_Chain" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/bonk.png?raw=true" alt="" align="left" width="863" height="130" data-align="right">
 
 ### Are we detecting threats in our environment quicker?
 
@@ -157,11 +157,11 @@ Saving the best, and trickiest, for last. Spoiling it now, it's Time to Detect. 
 
 Now let me explain why this is a terrible metric.
 
-##### TTD Case 1:
+##### TTD Case 1
 
 Someone downloads a known malicious file like a RAT which immediately gets blocked by a EPP. This block then gets reported to an analyst. *This encompasses all security incidents which get reported during the initial access technique/start of the attack chain.*
 
-In these types of cases the TTD is always 0. There is no downtime between the start of the incident and the time when a security tool reports the behavior to an analyst. 
+In these types of cases the TTD is always 0. There should be no unseen activity as we've caught it in the first step.
 
 ##### TTD Case 2
 
@@ -171,7 +171,7 @@ Here the time to detect relies on the actor performing an activity that is bad e
 
 ##### TTD Case 3
 
-A machine is infected with a piece of malware that the EPP does not find. In a threat hunt performed by the security team, logs in the SIEM are found that could indicate a compromise. These logs are then sent to a CIRT team who declares an incident. *All security incidents where a person is the reason the investigation starts.*
+A machine is infected with a piece of malware that the EPP does not find. In a threat hunt performed by the security team, logs in the SIEM are found that could indicate a compromise. These logs are then sent to a IR team who declares an incident. *All security incidents where a person is the reason the investigation starts.*
 
 Here the time to detect relies on humans coming across the activity. This time will have the most variation and like example 2 can range from minutes to months.
 
@@ -181,11 +181,11 @@ It would seem TTD is either 0 or a widely varying number. 0s representing proper
 
 If we find detection gaps in the environment the hope is we can add new alerting to help close it. Take a new initial access technique like those one note files that got popular a few years back. Someone falls for it and two weeks later a malware alert pops up. As an after action we add a detection to catch those one note files moving forward. 
 
-If it took us two weeks to notice the first time, the second will be instant. **This is the problem with “mean time” to anything.  Mean or arithmetic averages can make good performance and terrible performance net out as “not bad” and numbers can hide a worse, or a better, story than is really happening.** Averaging these two TTD to one week isn’t the correct story. We’ve improved our posture and gotten better!
+If it took us two weeks to notice the first time, the second will be instant. This is the problem with “mean time” to anything.  Mean or arithmetic averages can make good performance and terrible performance net out as “not bad” and numbers can hide a worse, or a better, story than is really happening. Averaging these two cases would be burrying the lead. We’ve actually improved our posture and gotten better!
 
 Because of this, metrics like number of new detections, ATT&CK coverage, and number of blocked cases are a much better indicator of how we’re doing at detecting threats.
 
-Moral of the story? Yes TTD exists but it's a silly metric measuring way too many things. Properly defined metrics should only be measuring one thing. So to get to the bottom of  “are we getting better at detecting?” we need more than one metric.
+Moral of the story? Yes TTD exists, but it's a silly metric measuring way too many things. Properly defined metrics should only be measuring one thing. So to get to the bottom of  “are we getting better at detecting?” we need more than one metric and metrics that aren't time related.
 
 ## Putting It All Together
 
@@ -195,4 +195,4 @@ These deltas are the specific gaps which have given me actionable and consistent
 
 The key is to be consistent for your own team! Spend the hours getting waaay into the weeds about definitions and metrics. Arguing about where those lines should be and what to record will force clarity in the definitions and result in a framework that works for you! If you do decide to use my chain and lines please make sure you understand where the timestamps are for each one of the steps.
 
-If you liked this blog and want more in-depth opinions on IR metrics please let me know! I’ve got a whole blog bouncing in my head on just TTD alone and we didn’t touch on non-time metrics here. Thanks for hanging with me and I hope this helps a bit for all my blue hats out there!
+If you liked this blog and want more in-depth opinions on IR metrics please let me know! I’ve got a whole blog bouncing in my head on measuring detection posture alone and we didn’t touch on non-time metrics here. Thanks for hanging with me and I hope this helps a bit for all my blue hats out there!
