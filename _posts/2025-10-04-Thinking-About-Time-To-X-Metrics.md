@@ -50,7 +50,7 @@ These letters will give us the starting and end points for the time metrics late
 
 - Ex: Timestamp of Network log that goes to a SIEM and results in a detection
 
-- Ex: The timestamp of a detection on an NTA which will get process by the team
+- Ex: The timestamp of a detection on an NTA which will get processed by the team
 
 - **If there is no response to a detection, alert, log, or other means the Reaction Event has not occurred.**
 
@@ -191,7 +191,7 @@ Moral of the story? Yes TTD exists, but it's a silly metric measuring way too ma
 
 <img title="Final_Chain" src="https://github.com/amalone341/amalone341.github.io/blob/main/assets/image/Final_chain.png?raw=true" alt="" align="left" width="863" height="210" data-align="right">
 
-These deltas are the specific gaps which have given me actionable and consistent metrics for my team once implemented. I’d be surprised if there is full agreement on where I drew these lines or whether or not TTC should be TTR or TTD or any other fun acronym.
+These deltas are the specific gaps which have given me actionable and consistent metrics for my team once implemented (Outside of TTD for all the reasons mentioned above). I’d be surprised if there is full agreement on where I drew these lines or whether or not TTC should be TTR or TTD or any other fun acronym.
 
 The key is to be consistent for your own team! Spend the hours getting waaay into the weeds about definitions and metrics. Arguing about where those lines should be and what to record will force clarity in the definitions and result in a framework that works for you! If you do decide to use my chain and lines please make sure you understand where the timestamps are for each one of the steps.
 
