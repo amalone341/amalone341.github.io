@@ -9,6 +9,7 @@ A reflection on my trip to Italy with a lucky read along the way
 
 <!--more-->
 
+## Smooth Transition
 
 Its been way to long since I've published a blog and gotten deep in my thoughts outside of work. Over the past few months I've written a few preliminary pages on things like the little things of IR, the importance of practicing, and my long overdue continuation on time metrics. So naturally I've come to the decision to do a book review on a 20 year old murder mystery book as my next topic. After all what's the point of trying to make a blog if you're not writing about the things you're passionate on. 
 
