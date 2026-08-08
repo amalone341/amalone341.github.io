@@ -33,7 +33,7 @@ I was caught by the give and take Tom struggles with as he balances the passion 
 
 I saw so much of myself in Tom. The Hypnerotomachia became a part of every aspect of his life. From not being able to focus on his dates with Katie to it leaking into friendships with Gil, Charlie and Paul, it became a part of Tom. I wonder if it was the same sense of obligation that I feel to my work. Like there's something left unfinished and you know it needs to get done at some point. We're both racked with the burden of knowing it can be done. 
 
-Its only when Tom is metaphorically grabbed by the hair and dragged away from it by Katie does he finally look back and understand how deeply the book leaked into his life. But here's where *The Rule of Four* caught me off guard. Before I last travel day I had put the book down with a quarter to go, having learned some good lessons about relationships with work. I thought I would get a happy ending with balance and with closure for Tom but Ian and Dustin didn't take that route. 
+Its only when Tom is metaphorically grabbed by the hair and dragged away from it by Katie does he finally look back and understand how deeply the book leaked into his life. But here's where *The Rule of Four* caught me off guard. Before my last travel day I had put the book down with a quarter to go, having learned some good lessons about relationships with work. I thought I would get a happy ending with balance and with closure for Tom but Ian and Dustin didn't take that route. 
 
 Tom makes a choice to take a tech job in Texas and put the Hypnerotomachia behind him. He stays with Katie and he and the rest of the friends go their separate ways. Tom ends up being a rockstar at his job and by all accounts is successful in the work he chose. In the background the other parts of his life become unsatisfying. The love he has with Katie slips and he's left with a feeling of dissatisfaction that he can't explain. Only at the end when the Hypnerotomachia comes back into his life does Tom finally find some of himself again.
 
@@ -41,11 +41,9 @@ It leaves a really nice message about acknowledging how these passions and proje
 
 As I'm back in America now, already waist deep again in work, I need to make my own decisions and think about life that way too. Slowing down to ask myself, What made me happy in the past? Whats making me happy now? *The Rule of Four* was a lovely story for understanding why those questions are so important. 
 
-Thinking back to where I read it, Italy told me to slow down and breath in the present. Take in the signs, smells, and feelings of everyday life. To try and appreciate more of the things that are in front of me and to understand what parts I like. As Italy dragged my eyes down *The Rule of Four* taught me the importance of reflecting on the past. To think back about what made me happy and where I found the most fulfilment. Without both of these peices as consideration for the next steps in the future, I might look up years from now and be down a path i'm not happy with. 
+Funny how some of the tiny spontaneous actions in life can sometimes make such a big difference. I don't think I would have been able to think through my work and the last few years as much as I did without *The Rule of Four* and Italy drawing my eyes to it. I feel a bit of responsibility now to leave something back in that book share that'll change someone's life for the better. So I'll probably leave Dungeon Crawler Carl since that's a pretty hard one to miss with :). 
 
-Funny how some of the tiny spontaneous actions in life can sometimes make such a big difference. I don't think I would have been able to think through my work and the last few years as much as I did without *The Rule of Four* and the setting. I feel a bit of responsibility now to leave something back in that book share that'll change someone's life for the better. So i'll probably leave Dungeon Crawler Carl since thats a pretty hard one to miss with :). 
-
-As a final thought, if you get the chance to go to Italy and give yourself time to think I can't recomend it enough. The country just inspires you to take in life and think about what actually matters. Find an excuse to go.
+As a final thought, if you get the chance to go to Italy and give yourself time to think I can't recommend it enough. The country just inspires you to take in life and think about what actually matters. Find an excuse to go.
 
 I'll get back to talking about cyber again sometime soon :)
 
